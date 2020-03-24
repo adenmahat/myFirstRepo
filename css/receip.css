@@ -1,0 +1,16 @@
+h1,
+h2 {
+  text-decoration: underline;
+  background-color: #eef0f4;
+  color: #caba14;
+}
+a {
+  text-decoration: underline;
+  color: #caba14;
+}
+div {
+  background-color: yellow;
+  font-style: italic;
+  margin-top: 10px;
+  margin-left: 20px;
+}
