@@ -4,6 +4,9 @@ h2 {
   background-color: #eef0f4;
   color: #caba14;
 }
+h1 {
+  margin-left: 40%;
+}
 a {
   text-decoration: underline;
   color: #caba14;
