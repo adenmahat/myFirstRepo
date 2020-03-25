@@ -9,9 +9,8 @@ a {
   text-decoration: underline;
   color: #caba14;
 }
-div {
-  background-color: yellow;
+pre {
+  background-color: #caba14;
   font-style: italic;
   margin-top: 10px;
-  margin-left: 20px;
 }
