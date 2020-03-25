@@ -1,0 +1,20 @@
+h1,
+h2 {
+  color: #778dcf;
+}
+body {
+  background-color: black;
+}
+li,
+p {
+  color: #d2d8eb;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+span,
+hr {
+  color: white;
+}
+small {
+  color: red;
+}
