@@ -1,0 +1,32 @@
+body {
+  background-image: url("background.png");
+  font-family: sans-serif;
+}
+#main {
+  border: 1px solid black;
+  width: 70%;
+  margin-left: 15%;
+}
+#left {
+  float: left;
+  width: 70%;
+}
+#right {
+  width: 30%;
+  float: right;
+  margin-right: 0px;
+  background-color: #a2b964;
+}
+#left_inside {
+  float: left;
+  width: 50%;
+}
+#right_inside {
+  width: 50%;
+  float: right;
+  margin-right: 0px;
+}
+.p1 {
+  border: 1px solid black;
+  margin-right: 10px;
+}
