@@ -6,7 +6,6 @@ body {
   border: 1px solid black;
   width: 70%;
   margin-left: 15%;
-  height: auto;
   overflow: auto;
 }
 #left {
