@@ -30,6 +30,9 @@ h1 {
   margin-right: 0px;
   background-color: #a2b964;
 }
+q {
+  padding-left: 5px;
+}
 #left_inside {
   float: left;
   width: 47%;
@@ -47,6 +50,9 @@ h1 {
   border-radius: 10px;
   background-color: #e8dc9b;
   padding: 8px;
+}
+.p2 {
+  font-style: italic;
 }
 .imgfit {
   width: 100%;
