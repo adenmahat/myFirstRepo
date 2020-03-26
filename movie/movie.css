@@ -44,7 +44,8 @@ h1 {
   border: 2px solid grey;
   margin-right: 10px;
   margin-left: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
+  background-color: #e8dc9b;
 }
 .imgfit {
   width: 100%;
