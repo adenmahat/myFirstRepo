@@ -32,12 +32,13 @@ h1 {
 }
 #left_inside {
   float: left;
-  width: 50%;
+  width: 47%;
+  margin: 0.5%;
 }
 #right_inside {
-  width: 50%;
+  width: 47%;
   float: right;
-  margin-right: 0px;
+  margin: 0.5%;
 }
 .p1 {
   border: 2px solid grey;
