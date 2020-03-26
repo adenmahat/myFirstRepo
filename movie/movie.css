@@ -37,3 +37,6 @@ body {
 .imgfit {
   width: 100%;
 }
+.imgleft {
+  float: left;
+}
