@@ -72,8 +72,7 @@ q {
 #right_inside {
   width: 47%;
   float: right;
-  margin-left: 2%;
-  margin-left: 1%;
+  margin: 2%;
 }
 .p1 {
   border: 2px solid grey;
@@ -82,10 +81,10 @@ q {
   border-radius: 10px;
   background-color: #e8dc9b;
   padding: 8px;
-  margin-bottom: 20pt;
 }
 .p2 {
   font-style: italic;
+  margin-bottom: 20pt;
 }
 .imgfit {
   width: 100%;
