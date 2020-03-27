@@ -50,8 +50,11 @@ h1 {
   background-color: #a2b964;
   font-size: 8pt;
 }
-#right dt {
+#right dl {
   margin-left: 10pt;
+}
+#right dt {
+  font-weight: bold;
 }
 q {
   padding-left: 5px;
