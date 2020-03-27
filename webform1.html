@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Lab 1
+    </title>
+  </head>
+  <body>
+    <form action="demo_form.jsp">
+      <label>Email Address </label><br />
+      <input type="text" name="email" placeholder="enter email" /><br />
+      We will never share your Email with anyone
+      <label>Password </label><br />
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        required="true"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+        title="the Password field is at least 10 characters in length and 
+        contain at least one number and one uppercase and lowercase letter"
+      /><br />
+
+      <br />
+      <label for="website">Homepage:</label><br />
+      <input
+        type="url"
+        id="website"
+        name="website"
+        pattern="https?://.+"
+        title="Include http://"
+      /><br /><br />
+
+      <input type="checkbox" />Check me out<br />
+      <input type="submit" /><br />
+    </form>
+  </body>
+</html>

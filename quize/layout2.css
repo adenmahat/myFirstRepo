@@ -1,0 +1,11 @@
+#main {
+  width: 500px;
+}
+span {
+  float: left;
+}
+li strong {
+  background-color: red;
+}
+#ad {
+}
