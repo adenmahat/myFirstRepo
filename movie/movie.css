@@ -39,6 +39,10 @@ h1 {
   background-image: url("rbg.png");
   background-repeat: repeat-x;
 }
+#ratingsdiv img {
+  vertical-align: bottom;
+  height: 83px;
+}
 #ratingsdiv span {
   color: red;
   font-size: 48pt;
