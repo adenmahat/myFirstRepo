@@ -50,8 +50,8 @@ h1 {
   background-color: #a2b964;
   font-size: 8pt;
 }
-dt {
-  margin: 10pt;
+#right dt {
+  margin-left: 10pt;
 }
 q {
   padding-left: 5px;
@@ -59,12 +59,14 @@ q {
 #left_inside {
   float: left;
   width: 47%;
-  margin: 0.5%;
+  margin-right: 2%;
+  margin-right: 1%;
 }
 #right_inside {
   width: 47%;
   float: right;
-  margin: 0.5%;
+  margin-left: 2%;
+  margin-left: 1%;
 }
 .p1 {
   border: 2px solid grey;
