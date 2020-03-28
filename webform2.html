@@ -5,18 +5,18 @@
       Lab 1
     </title>
     <style>
-
-      #main{
+      #main {
         width: 50%;
-        margin: auto
+        margin: auto;
       }
       form div {
         float: left;
         width: 48%;
-        margin:1%; 
+        margin: 1%;
       }
-      
-      input,select{
+
+      input,
+      select {
         width: 100%;
         border-color: grey;
         padding: 12px 20px;
@@ -24,108 +24,107 @@
         box-sizing: border-box;
         margin-top: 12px;
       }
-      input[type="submit"],input[type="reset"],input[type="reset"]{
+      input[type="submit"],
+      input[type="reset"],
+      input[type="reset"] {
         width: 80px;
-       
+
         padding: 10px;
         background-color: white;
-        float:right;
+        float: right;
         margin: 8px;
       }
-      input[type="submit"]{
+      input[type="submit"] {
         border-color: blue;
-        color: blue
+        color: blue;
       }
-      input[type="reset"]{
+      input[type="reset"] {
         border-color: orange;
-        color: orange
+        color: orange;
       }
-      
-      li,ul,h2{
+
+      li,
+      ul,
+      h2 {
         display: inline;
         margin-right: 10px;
       }
-      li{
+      li {
         padding: 10px;
         border-left: 1px solid white;
       }
-      span{
-        float:right
+      span {
+        float: right;
       }
-      #navbar{
+      #navbar {
         padding: 10px;
         background-color: blue;
         color: white;
       }
-      
-      
-      
     </style>
   </head>
   <body>
     <div id="navbar">
-     
+      <h2>MUM Golden Dome Market ::: SRM System</h2>
       <ul>
-        <h2>MUM Golden Dome Market ::: SRM System</h2>
         <li>Products</li>
         <li>Suppliers</li>
-        </ul>
-        <span>Hello ! <button>Logout</button></span>
+      </ul>
+      <span>Hello ! <button>Logout</button></span>
     </div>
     <div id="main">
-    <form action="demo_form.jsp">
-      <h3>New Product Form</h3>
-      <div>
-        <label>Email Address </label><br />
-        <input type="text" name="productId" /><br />
-      </div>
+      <form action="#">
+        <h3>New Product Form</h3>
+        <div>
+          <label>Email Address </label><br />
+          <input type="text" name="productId" /><br />
+        </div>
 
-      <div>
-        <label>Quantity in stock </label><br />
+        <div>
+          <label>Quantity in stock </label><br />
 
-        <input type="number" name="qty" /><br />
-      </div>
-      <div>
-        <label>Name </label><br />
-        <input type="text" name="name" />
-      </div>
-      <div>
-        <label>supplier </label><br />
-        <select name="supplier">
-          <option>Jerry</option>
-          <option>George</option>
-          <option>Kramer</option>
-          <option>Elaine</option>
-          <option selected>Select a supplier</option>
-        </select>
-      </div>
-      
-      <div >
-        <label>Unit price </label><br />
+          <input type="number" name="qty" /><br />
+        </div>
+        <div>
+          <label>Name </label><br />
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <label>supplier </label><br />
+          <select name="supplier">
+            <option>Jerry</option>
+            <option>George</option>
+            <option>Kramer</option>
+            <option>Elaine</option>
+            <option selected>Select a supplier</option>
+          </select>
+        </div>
 
-        <input type="number" name="price" />
-      </div>
-      <div>
-        <label>Date Supplied </label>
+        <div>
+          <label>Unit price </label><br />
 
-        <input type="date" name="date" />
-        Enter Valid Date
-      </div>
-      
+          <input type="number" name="price" />
+        </div>
+        <div>
+          <label>Date Supplied </label>
+
+          <input type="date" name="date" />
+          Enter Valid Date
+        </div>
+
         <input type="reset" />
         <input type="submit" />
-        <input type="reset" value="Cancel"/>
-      
+        <input type="reset" value="Cancel" />
+      </form>
     </div>
-    </form>
     <div style="position: fixed;bottom:0;right:0;">
-        <a href="https://validator.w3.org/check/referer"
-          ><img src="w3c-html.png" alt="Valid HTML5"
-        /></a>
-        <br />
-        <a href="https://jigsaw.w3.org/css-validator/check/referer"
-          ><img src="w3c-css.png" alt="Valid CSS"
-        /></a>
-      </div>
+      <a href="https://validator.w3.org/check/referer"
+        ><img src="w3c-html.png" alt="Valid HTML5"
+      /></a>
+      <br />
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"
+        ><img src="w3c-css.png" alt="Valid CSS"
+      /></a>
+    </div>
   </body>
 </html>
