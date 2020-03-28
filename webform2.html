@@ -4,34 +4,90 @@
     <title>
       Lab 1
     </title>
+    <style>
+
+      div{
+        width: 50%;
+        margin: auto
+      }
+      form div {
+        float: left;
+        width: 48%;
+        margin:1%; 
+      }
+      
+      input,select{
+        width: 100%;
+        border-color: grey;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        margin-top: 12px;
+      }
+      input[type="submit"],input[type="reset"],input[type="reset"]{
+        width: 80px;
+       
+        padding: 10px;
+        background-color: white
+      }
+      input[type="submit"]{
+        border-color: blue;
+        color: blue
+      }
+      input[type="reset"]{
+        border-color: orange;
+        color: orange
+      }
+      
+      
+      
+      
+    </style>
   </head>
   <body>
+    <div>
     <form action="demo_form.jsp">
-      <label>Email Address </label><br />
-      <input type="number" name="productId" /><br />
+      <div>
+        <label>Email Address </label><br />
+        <input type="text" name="productId" /><br />
+      </div>
 
-      <label>Quantity in stock </label><br />
+      <div>
+        <label>Quantity in stock </label><br />
 
-      <input type="number" name="qty" /><br />
-      <label>Name </label><br />
-      <input type="text" name="name" /><br />
-      <label>supplier </label><br />
-      <select name="supplier">
-        <option>Jerry</option>
-        <option>George</option>
-        <option>Kramer</option>
-        <option>Elaine</option>
-        <option selected>Select a supplier</option> </select
-      ><br />
-      <label>Unit price </label><br />
+        <input type="number" name="qty" /><br />
+      </div>
+      <div>
+        <label>Name </label><br />
+        <input type="text" name="name" />
+      </div>
+      <div>
+        <label>supplier </label><br />
+        <select name="supplier">
+          <option>Jerry</option>
+          <option>George</option>
+          <option>Kramer</option>
+          <option>Elaine</option>
+          <option selected>Select a supplier</option>
+        </select>
+      </div>
+      
+      <div >
+        <label>Unit price </label><br />
 
-      <input type="number" name="price" /><br />
-      <label>Date Supplied </label><br />
+        <input type="number" name="price" />
+      </div>
+      <div>
+        <label>Date Supplied </label>
 
-      <input type="date" name="date" /><br />
-
-      <input type="reset" />
-      <input type="submit" />
+        <input type="date" name="date" />
+      </div>
+      
+        <input type="reset" />
+        <input type="submit" />
+        <input type="reset" value="Cancel"/>
+      
+    </div>
     </form>
   </body>
 </html>

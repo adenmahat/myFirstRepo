@@ -5,6 +5,8 @@
       Lab 1
     </title>
     <style>
+      label {
+      }
       input[type="text"],
       input[type="password"] {
         border-color: grey;
@@ -13,14 +15,16 @@
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
+        margin-top: 12px;
       }
       form {
         width: 50%;
         margin: auto;
       }
       input[type="submit"] {
-        background-color: #9999ff;
+        background-color: #32b7f9;
         padding: 10px;
+        color: white;
       }
     </style>
   </head>
@@ -28,7 +32,7 @@
     <form action="demo_form.jsp">
       <label>Email Address </label><br />
       <input type="text" name="email" placeholder="enter email" /><br />
-      We will never share your Email with anyone
+      We will never share your Email with anyone<br /><br />
       <label>Password </label><br />
       <input
         type="password"
@@ -41,13 +45,12 @@
       /><br />
 
       <br />
-      <label for="website">Homepage:</label><br />
+      <label for="website">Enter URL:</label><br />
       <input
         type="text"
-        id="website"
-        name="website"
         pattern="https?://.+"
         title="Include http://"
+        placeholder="Enter URL"
       /><br /><br />
 
       <input type="checkbox" />Check me out<br />
