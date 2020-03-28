@@ -43,9 +43,19 @@
       
       li,ul,h2{
         display: inline;
+        margin-right: 10px;
+      }
+      li{
+        padding: 10px;
+        border-left: 1px solid white;
       }
       span{
         float:right
+      }
+      #navbar{
+        padding: 10px;
+        background-color: blue;
+        color: white;
       }
       
       
@@ -53,10 +63,10 @@
     </style>
   </head>
   <body>
-    <div>
+    <div id="navbar">
      
       <ul>
-        <li> <h2>MUM Golden Dome Market ::: SRM System</h2></li>
+        <h2>MUM Golden Dome Market ::: SRM System</h2>
         <li>Products</li>
         <li>Suppliers</li>
         </ul>
@@ -64,6 +74,7 @@
     </div>
     <div id="main">
     <form action="demo_form.jsp">
+      <h3>New Product Form</h3>
       <div>
         <label>Email Address </label><br />
         <input type="text" name="productId" /><br />
@@ -98,6 +109,7 @@
         <label>Date Supplied </label>
 
         <input type="date" name="date" />
+        Enter Valid Date
       </div>
       
         <input type="reset" />
