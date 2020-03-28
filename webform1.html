@@ -4,6 +4,25 @@
     <title>
       Lab 1
     </title>
+    <style>
+      input[type="text"],
+      input[type="password"] {
+        border-color: grey;
+
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+      }
+      input[type="submit"] {
+        background-color: #9999ff;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <form action="demo_form.jsp">
@@ -24,7 +43,7 @@
       <br />
       <label for="website">Homepage:</label><br />
       <input
-        type="url"
+        type="text"
         id="website"
         name="website"
         pattern="https?://.+"
