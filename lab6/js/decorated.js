@@ -1,4 +1,6 @@
+/*jshint esversion: 6 */
 window.onload = function() {
+  "use strict";
   //setInterval(getBigger, 500);
 };
 var getBigger = function() {
