@@ -27,16 +27,32 @@
         color: white;
       }
     </style>
+    <script>
+      function submitData() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var str = "Email : " + email + "\nPassword : " + password;
+        console.log(str);
+
+        alert(str);
+      }
+    </script>
   </head>
   <body>
-    <form action="demo_form.jsp">
+    <form action="">
       <label>Email Address </label><br />
-      <input type="text" name="email" placeholder="enter email" /><br />
+      <input
+        type="text"
+        name="email"
+        placeholder="enter email"
+        id="email"
+      /><br />
       We will never share your Email with anyone<br /><br />
       <label>Password </label><br />
       <input
         type="password"
         placeholder="Password"
+        id="password"
         name="password"
         required
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
@@ -54,7 +70,7 @@
       /><br /><br />
 
       <input type="checkbox" />Check me out<br />
-      <input type="submit" /><br />
+      <input type="submit" onclick="submitData()" /><br />
     </form>
     <div style="position: fixed;bottom:0;right:0;">
       <a href="https://validator.w3.org/check/referer"

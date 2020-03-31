@@ -1,43 +1,77 @@
 <html>
   <head>
+    <!--
+       I heard the professor saying in the lecture "closure keeps a reference to the free variable but
+        Javascript lambdas keep variable values, not references".
+        Does that mean we can't achieve closure using javascript lambdas? or does mean java lambdas?
+    -->
+    <script>
+      function f() {
+        let a = 10,
+          sum = 0;
+        return function() {
+          sum = sum + a;
+          console.log("" + sum);
+        };
+      }
+      let fs = f();
+      setInterval(fs, 2000);
+
+      // function fib(n, a, b) {
+      //   let arr = [a, b];
+      //   for (var i = 2; i < n; i++) {
+      //     arr[i] = arr[i - 1] + arr[i - 2];
+      //   }
+      //   return arr;
+      // }
+      // function findSecondBiggest(arr, k) {
+      //   console.log(arr, k);
+
+      //   let L = [];
+      //   let E = [];
+      //   let G = [];
+      //   let pvt = arr[arr.length - 1];
+      //   for (var i = arr.length - 1; i >= 0; i--) {
+      //     if (arr[i] < pvt) {
+      //       L.push(arr[i]);
+      //     } else if (arr[i] > pvt) {
+      //       G.push(arr[i]);
+      //     } else {
+      //       E.push(arr[i]);
+      //     }
+      //   }
+      //   if (k <= L.length) {
+      //     return findSecondBiggest(L, k);
+      //   } else if (k > L.length + E.length) {
+      //     return findSecondBiggest(G, k - (L.length + E.length));
+      //   } else {
+      //     return E;
+      //   }
+      // }
+    </script>
     <style>
-      #outer {
-        border: 2px solid red;
-        width: 500px;
-        height: 500px;
-        padding: 20px;
-        position: relative;
+      li {
+        display: inline;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid black;
+        line-height: 4em;
       }
-      #middle {
-        border: 2px solid red;
-        width: 300px;
-        height: 300px;
-        padding: 20px;
-      }
-      #inner {
-        border: 2px solid red;
-        width: 150px;
-        height: 150px;
-      }
-      .m {
-        top: 50px;
-      }
-      span {
+      ul {
         background-color: red;
-        position: absolute;
-        top: 0;
-        right: 0;
+        text-align: center;
       }
     </style>
   </head>
 
   <body>
-    <div id="outer">
-      <div id="middle">
-        <div id="inner">
-          <span>target</span>
-        </div>
-      </div>
+    <button onclick="test()">Click</button>
+    <div>
+      <ul>
+        <li>Bananas</li>
+        <li>Apples</li>
+        <li>Mangoes</li>
+      </ul>
     </div>
   </body>
 </html>

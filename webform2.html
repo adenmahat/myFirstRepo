@@ -44,14 +44,16 @@
       }
 
       li,
-      ul,
-      h2 {
+      ul {
         display: inline;
         margin-right: 10px;
       }
       li {
         padding: 10px;
         border-left: 1px solid white;
+      }
+      li:first-child {
+        border: none;
       }
       span {
         float: right;
@@ -62,40 +64,65 @@
         color: white;
       }
     </style>
+    <script>
+      function submitData() {
+        var productId = document.getElementById("productId").value;
+        var name = document.getElementById("name").value;
+        var supplier = document.getElementById("supplier").value;
+        var qty = document.getElementById("qty").value;
+        var price = document.getElementById("price").value;
+        var date = document.getElementById("date").value;
+        var str =
+          "productId : " +
+          productId +
+          "\nsupplier : " +
+          supplier +
+          "\nDate : " +
+          date +
+          "\nName : " +
+          name +
+          "\nPrice : " +
+          price +
+          "\nQty : " +
+          qty;
+        console.log(str);
+
+        alert(str);
+      }
+    </script>
   </head>
   <body>
     <div id="navbar">
-      <h2>MUM Golden Dome Market ::: SRM System</h2>
       <ul>
+        <li>MUM Golden Dome Market ::: SRM System</li>
         <li>Products</li>
         <li>Suppliers</li>
       </ul>
       <span>Hello ! <button>Logout</button></span>
     </div>
     <div id="main">
-      <form action="#">
+      <form action="webform1.html">
         <h3>New Product Form</h3>
         <div>
-          <label>Email Address </label><br />
-          <input type="text" name="productId" /><br />
+          <label>productId </label><br />
+          <input type="text" id="productId" /><br />
         </div>
 
         <div>
           <label>Quantity in stock </label><br />
 
-          <input type="number" name="qty" /><br />
+          <input type="number" id="qty" /><br />
         </div>
         <div>
           <label>Name </label><br />
-          <input type="text" name="name" />
+          <input type="text" id="name" />
         </div>
         <div>
           <label>supplier </label><br />
-          <select name="supplier">
-            <option>Jerry</option>
-            <option>George</option>
-            <option>Kramer</option>
-            <option>Elaine</option>
+          <select name="supplier" id="supplier">
+            <option value="jerry">Jerry</option>
+            <option value="goerge">George</option>
+
             <option selected>Select a supplier</option>
           </select>
         </div>
@@ -103,17 +130,17 @@
         <div>
           <label>Unit price </label><br />
 
-          <input type="number" name="price" />
+          <input type="number" name="price" id="price" />
         </div>
         <div>
           <label>Date Supplied </label>
 
-          <input type="date" name="date" />
+          <input type="date" name="date" id="date" />
           Enter Valid Date
         </div>
 
         <input type="reset" />
-        <input type="submit" />
+        <input type="submit" onclick="submitData()" />
         <input type="reset" value="Cancel" />
       </form>
     </div>
