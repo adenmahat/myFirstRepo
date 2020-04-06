@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Lab 1
+    </title>
+    <style>
+      label {
+      }
+      input[type="text"],
+      input[type="password"] {
+        border-color: grey;
+
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        margin-top: 12px;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+      }
+      input[type="submit"] {
+        background-color: #32b7f9;
+        padding: 10px;
+        color: white;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        $("#form").submit(function(event) {
+          event.preventDefault();
+          // alert("hey");
+          let email = $("#email").val();
+          let password = $("#password").val();
+          let url = $("#url").val();
+
+          console.log(`Email : ${email}, password : ${password}, url : ${url}`);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="js.html">home</a>
+    <form action="dem.jsp" id="form">
+      <label>Email Address </label><br />
+      <input
+        type="text"
+        name="email"
+        value="asas@fdf.com"
+        placeholder="enter email"
+        id="email"
+      /><br />
+      We will never share your Email with anyone<br /><br />
+      <label>Password </label><br />
+      <input
+        type="password"
+        placeholder="Password"
+        id="password"
+        name="password"
+        value="As1234567899"
+        required
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+        title="the Password field is at least 10 characters in length and 
+        contain at least one number and one uppercase and lowercase letter"
+      /><br />
+
+      <br />
+      <label>Enter URL:</label><br />
+      <input
+        type="text"
+        id="url"
+        value="https://sdsdsd.com"
+        pattern="https?://.+"
+        title="Include http://"
+        placeholder="Enter URL"
+      /><br /><br />
+
+      <input type="checkbox" />Check me out<br />
+      <input type="submit" /><br />
+    </form>
+    <div style="position: fixed;bottom:0;right:0;">
+      <a href="https://validator.w3.org/check/referer"
+        ><img src="images/w3c-html.png" alt="Valid HTML5"
+      /></a>
+      <br />
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"
+        ><img src="images/w3c-css.png" alt="Valid CSS"
+      /></a>
+    </div>
+  </body>
+</html>

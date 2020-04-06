@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <!--
+       I heard the professor saying in the lecture "closure keeps a reference to the free variable but
+        Javascript lambdas keep variable values, not references".
+        Does that mean we can't achieve closure using javascript lambdas? or does mean java lambdas?
+    -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let animal = {
+        eats: true
+      };
+      function Rabbit(name) {
+        this.name = name;
+      }
+      Rabbit.prototype = animal;
+      let rabbit = new Rabbit("White Rabbit"); //rabbit.__proto__ == animal
+      console.log(rabbit.constructor);
+    </script>
+    <style>
+      .div1 {
+        height: 200px;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div2" class="div1">
+      <a href="webform1.html">Web 1</a>
+      <p id="p2" class="p2">
+        <button id="btn3" class="v1">start</button>
+        <button id="btn4">stop</button>
+      </p>
+    </div>
+  </body>
+  <script>
+    //practice scope examples
+    // let person = {
+    //   name: "",
+    //   dateOfBirth: "",
+    //   getName: function() {
+    //     return this.name;
+    //   },
+    //   setName: function(newName) {
+    //     this.name = newName;
+    //   },
+    //   setDateOfBirth: function(newDate) {
+    //     this.dateOfBirth = newDate;
+    //   },
+    //   getDateOfBirth: function() {
+    //     return this.dateOfBirth;
+    //   }
+    // };
+    // let john = Object.create(person);
+    // john.setName("john");
+    // john.setDateOfBirth("December 10th, 1998");
+    // console.log(`The person’s name is John is ${john.getName()}`);
+    // console.log(`${john.getName()} was born on ${john.getDateOfBirth()}`);
+
+    // let employee = Object.create(person);
+    // employee.salary = 0;
+    // employee.hireDate = new Date();
+    // employee.doJob = function(jobtitle) {
+    //   console.log(`${this.name} is a ${jobtitle} who earns $${this.salary}`);
+    // };
+    // employee.setSalary = function(salary) {
+    //   this.salary = salary;
+    // };
+    // employee.getSalary = function() {
+    //   return this.salary;
+    // };
+
+    // let anna = Object.create(employee);
+    // anna.setName("Anna");
+    // anna.setSalary(249.995);
+    // anna.set;
+    // anna.doJob("programmer");
+
+    // function Person(name, dateOfBirth) {
+    //   this.name = name;
+    //   this.dateOfBirth = dateOfBirth;
+    // }
+
+    // Person.prototype.toString = function() {
+    //   console.log(this);
+    // };
+
+    // let peter = new Person("Peter", "November 10 1985");
+
+    // peter.toString();
+  </script>
+</html>
